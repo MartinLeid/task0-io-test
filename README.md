@@ -221,7 +221,7 @@ y(t) = a * y(t-1) + ε(t) => y(t) - y(t-1) = a * y(t-1) - y(t-1) + ε(t) => Δy(
 		+ Библиотека `statsmodels`
 		
 7) SARIMAX
-	* `SARIMAX(ts, order=(p, k, q), seasonal_order=(p+7,k,q+4,12))` - строит модель SARIMAX на основе временного ряда ts
+	* `SARIMAX(ts, order=(p, k, q), seasonal_order=(p,k,q,s))` - строит модель SARIMAX на основе временного ряда ts
 		+ ts - временной ряд
 		+ order - порядок для модели
 		+ seasonal_order - сезональный порядок - параметры для авторегрессии, интегрированности, скользящего среднего и сезональности
