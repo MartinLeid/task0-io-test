@@ -260,12 +260,14 @@ y(t) = a * y(t-1) + ε(t) => y(t) - y(t-1) = a * y(t-1) - y(t-1) + ε(t) => Δy(
 	
 11) Использование графической библиотеки Bokeh
 	* Использование данной бибилиотеки, в целом, аналогично использованию билиотеки Matplotlib, с которой мы ознакомились в прошлом семестре
-	* `p = TimeSeries(ts, legend=True, title="Time Series", ylabel='Values', xlabel='Time')`
+	* `p = TimeSeries(ts, width=900, height=500, legend=False, title="Time Series", ylabel='Values', xlabel='Time', color='blue')`
 		+ ts - временной ряд
-		+ legend=True - добавить легенду
+		+ legend=False - убрать легенду
 		+ title='Time Series' - добавить заголовок
 		+ xlable='Time' - добавить название оси X
 		+ ylable='Values' - добавить название оси Y
+		+ color='blue' - выбрать цвет графика
+		+ width=900, height=500 - ширина, высота
 	* `show(p)` - вывести изображение на экран
 	* `output_notebook()` - использовать Jupiter Notebook в качестве файла, в который будут выводиться изображения
 
